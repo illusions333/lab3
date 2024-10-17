@@ -1,0 +1,16 @@
+.main_text{
+    font-size: 20px;
+    padding: 20px;
+}
+.video1{
+    video {
+        width: 60%;
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+        height: auto;
+        margin: 5px auto 15px;
+    }
+    justify-content: center;
+    display: flex;
+}

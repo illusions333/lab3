@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <title>MathAddicts - Пошук теорем</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="SHORTCUT ICON" href="images/calc_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles_general.css" type="text/css"/>
+        <link rel="stylesheet" href="css/styles_theorems.css" type="text/css"/>
+        <!--FontAwesome - для іконок-->
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo headed">
+                <img src="images/output-onlinegiftools.gif" class="icongif" alt="Завантажте іконку!">&nbsp;
+                <a href="index.html">MathAddicts</a>
+            </div>
+            <div class="list_style">
+                <span class="bar"><a href="news.html" class="button1">Новини/Статті</a></span>
+                <span class="bar"><a href="survey.html" class="button1">Опитувальник</a></span>
+                <span class="bar"><a href="look_for_theorems.html" class="button1">Пошук теорем</a></span>
+                <div class="bar_submenu">
+                    <div class="submenu-title">Про нас&ensp;<i class="fa fa-caret-down"></i></div>
+                    <div class="submenu-content">
+                        <div style="border-bottom: 1px solid black; padding: 10px 0;"><a href="about_us.html">Наша історія</a></div>
+                        <div style="padding: 10px 0;"><a href="about_partners.html">Наші партнери</a></div>
+                    </div>
+                </div>
+                <div class="search_bar">
+                    <label for="searchInput"><i class="fa fa-search"></i></label>
+                    <input id="searchInput" type="search" placeholder="Search"/>
+                </div>
+                <span class="bar_signin"><a href="signin.html" class="button_signin">Ввійти до акаунту</a></span>
+            </div>
+        </header>
+        <main>
+            <h2 class="entry_heading">Список теорем:</h2>
+            <div class="all">
+                <div class="theorems theorem1">
+                    <div style="align-content: center; text-align: center">
+                        <img src="images/pythagorean.jpg" alt="The theorem has been forgotten :(" class="theorem_image">
+                    </div>
+                    <div class="table_text">
+                        <h2><a href="theorem1.html" class="link">Теорема Піфагора: пояснення, доведення, використання</a></h2>
+                    </div>
+                </div>
+                <div class="theorems">
+                    <div style="align-content: center; text-align: center">
+                        <img src="images/dirihle1.jpg" alt="The theorem has been forgotten :(" class="theorem_image">
+                    </div>
+                    <div class="table_text">
+                        <h2><a href="theorem2.html" class="link">Принцип Діріхле: пояснення, доведення, використання</a></h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_main">
+                <div class="navigate_footer">
+                    <a href="news.html">Новини/Статті</a>
+                    <a href="survey.html">Опитувальник</a>
+                    <a href="look_for_theorems.html">Пошук теорем</a>
+                    <a href="about_us.html">Про нас</a>
+                </div>
+                <div class="info_footer">
+                    <div><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;dubchak.oleksandr@chnu.edu.ua</div>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i> +38 (050) 123 45 67</div>
+                    <div><i class="fa fa-building-o"></i> &nbsp;MathAddicts Inc.</div>
+                    <div>вул. Університетська, 28</div>
+                    <div> м. Чернівці, Чернівецька область, 58000</div>
+                    <div>Україна</div>
+                </div>
+            </div>
+            <div class="copyright_and_more">
+                <button class="button2">
+                    <span class="copyright">Place your cursor here &rarr;&nbsp;&nbsp; Copyright &#169; 2024 MathAddicts. All rights reserved. &nbsp;&nbsp;&larr; Place your cursor here</span>
+                    <img src="images/run-forest-run.gif" alt="Forest didn't run away :(" class="copyright1 image">
+                    <img src="images/1.gif" alt="The Dark Side of Force has won :(" class="copyright1 image">
+                    <br/>
+                    <video id="myaudio" controls class="copyright1">
+                        <source src="images/MEOW.mp4" type="video/mp4"/>
+                    </video>
+                    <span class="copyright1" style="color: white; font-size: 20px;"><br/>&uarr; Play this :P &uarr;</span>
+                </button>
+            </div>
+        </footer>
+        <button onclick="scrollFunction()" class="hover_button" title="Go to top">&uarr;</button>
+        <script>
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.5;
+        </script>
+        <script>
+            let upButton = document.getElementsByClassName("hover_button")[0];
+            window.onscroll = function () { scrollDisplay() };
+            function scrollDisplay() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    upButton.style.display = "block";
+                }
+                else {
+                    upButton.style.display = "none";
+                }
+            }
+
+            function scrollFunction(){
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+    </body>
+</html>

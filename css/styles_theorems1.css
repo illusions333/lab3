@@ -1,0 +1,38 @@
+main{
+    display: grid;
+    padding: 0 30px;
+    @media screen and (max-width: 767px){
+        padding: 0 15px;
+    }
+    hr{
+        border: 1px solid lightgray;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .theorem_image {
+        height: auto;
+        text-align: center;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            img {
+                width: 75%;
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1920px) {
+            img {
+                width: 40%;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            img {
+                width: 100%;
+            }
+        };
+    }
+    .main_theorem_text{
+        font-size: 19px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
